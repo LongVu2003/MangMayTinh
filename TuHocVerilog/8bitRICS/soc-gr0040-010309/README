@@ -1,0 +1,48 @@
+The soc/gr0040 Kit README
+Version 2001.03.09
+
+Copyright (C) 2001, Gray Research LLC.  All rights reserved.
+The contents of this file are subject to the XSOC License Agreement;
+you may not use this file except in compliance with this Agreement.
+See the LICENSE file.
+
+
+CONTENTS
+
+The soc/gr0040 Kit consists of these files.
+
+1. Documentation
+
+    README: this file
+    LICENSE: XSOC License Agreement, also www.fpgacpu.org/xsoc/LICENSE.html
+	soc-gr0040-paper.pdf: DesignCon 2001 paper: "Designing a Simple
+        FPGA-Optimized RISC CPU and System-on-a-Chip"
+	soc-gr0040-slides.pdf: Accompanying slides
+
+2. Verilog Design
+    soc-gr0040.v: the gr0040 and gr0041 processors and system-on-a-chip
+    soc-gr-tb.v: simple test bench
+    ramb4.v: block RAM simulation model
+
+3. Demo
+    fib.c: simple Fibonacci sequence
+    fib.s: compiler output
+    sim-gr0.s: simple startup code and interrupt handler
+    end.s: simulator epilog
+    fib.lst, fib.hex: assembler output
+    ramh.mem, raml.mem: intialized block RAM memory images
+
+
+Note: the design herein is Copyright (C) 2000-2001, Gray Research LLC,
+and, as with the XSOC Project, is licensed only for limited
+non-commercial research and academic uses, as described in the LICENSE. 
+
+Note: As of version 2001.03.09, this design runs fine in simulation,
+but has not been verified in hardware. 
+ 
+   
+Questions? Discuss the design on the FPGA CPU mailing list,
+fpga-cpu@yahoogroups.com
+
+Jan Gray,
+President, Gray Research LLC
